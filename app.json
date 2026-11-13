@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Velhasıl",
+    "slug": "velhasil",
+    "scheme": "velhasil",
+    "version": "0.3.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.velhasil.app"
+    },
+    "android": {
+      "package": "org.velhasil.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-location",
+      "expo-notifications"
+    ]
+  }
+}
