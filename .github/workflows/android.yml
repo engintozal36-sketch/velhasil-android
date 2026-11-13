@@ -32,7 +32,7 @@ jobs:
         working-directory: android
         run: |
           chmod +x gradlew
-          ./gradlew ./gradlew assembleRelease -Pandroid.injected.signing.store.file=app/debug.keystore -Pandroid.injected.signing.store.password=android -Pandroid.injected.signing.key.alias=androiddebugkey -Pandroid.injected.signing.key.password=android --no-daemon -Pandroid.injected.signing.key.password=android --no-daemon
+          ./gradlew assembleRelease -Pandroid.injected.signing.store.file=app/debug.keystore -Pandroid.injected.signing.store.password=android -Pandroid.injected.signing.key.alias=androiddebugkey -Pandroid.injected.signing.key.password=android --no-daemon -Pandroid.injected.signing.key.password=android --no-daemon
 
       - name: APK dosyasini kaydet
         uses: actions/upload-artifact@v4
