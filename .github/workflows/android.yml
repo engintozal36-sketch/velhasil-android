@@ -1,0 +1,25 @@
+name: Velhasil Android APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kaynak kodu al
+        uses: actions/checkout@v4
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Java kur
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Derleme ortamini kontrol et
+        run: |
+          node --version
+          java -version
+          echo 'Velhasil APK derleme ortami hazir'
